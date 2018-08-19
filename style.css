@@ -5,6 +5,8 @@ body{
     text-decoration: none;
 }
 
+/*Navigator*/
+
 .navlink {
     text-decoration: none;
     font-size: 13px;
@@ -43,6 +45,8 @@ li {
 #profile {
     margin-top: -10px !important;
 }
+
+/*Main*/
 
 .logo {
     height: 92px;
@@ -125,3 +129,40 @@ input {
     visibility: visible;
     opacity: 1;
 }
+
+.micro:hover {
+    cursor: pointer;
+}
+
+/*Buttons*/
+
+.buttonl {
+    width: 125px;
+    height: 17px;
+    background-color: #f2f2f2;
+    padding: 12px;
+    border: transparent;
+    border-radius: 2px;
+    margin: 30px 4px auto 600px;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #757575;
+}
+
+.buttonr {
+    width: 125px;
+    height: 17px;
+    background-color: #f2f2f2;
+    padding: 12px;
+    border: transparent;
+    border-radius: 2px;
+    margin: 30px auto auto 800px;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #757575;
+}
+
