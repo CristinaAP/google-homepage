@@ -136,7 +136,7 @@ input {
 
 /*Buttons*/
 
-.buttonl {
+.buttons {
     width: 125px;
     height: 17px;
     background-color: #f2f2f2;
@@ -144,14 +144,15 @@ input {
     border: transparent;
     border-radius: 2px;
     margin: 30px 4px auto 600px;
-    position: relative;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
     color: #757575;
+    flex-direction: row;
+    display: flex;
 }
 
-.buttonr {
+.butt {
     width: 125px;
     height: 17px;
     background-color: #f2f2f2;
@@ -159,7 +160,6 @@ input {
     border: transparent;
     border-radius: 2px;
     margin: 30px auto auto 800px;
-    position: relative;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
