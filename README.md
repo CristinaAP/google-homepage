@@ -11,6 +11,12 @@ Required skills:
 
 Obtained skills:
 
+01. Position divs with flex
+02. Save images using bash
+03. Shadow hover effect
+04. Better understanding of the box model
+05. Use Chrome developer tools to identify and solve problems
+
 
 
 
