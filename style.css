@@ -3,12 +3,12 @@
 body{
     font-family: arial,sans-serif;
     text-decoration: none;
+    margin: 0;
 }
 
 /*Navigator*/
 
 .navlink {
-    text-decoration: none;
     font-size: 13px;
 }
 
@@ -28,7 +28,7 @@ a:-webkit-any-link {
     color: rgb(128, 128, 128);
 }
  
-ul {
+ul .nav {
     list-style-type: none;
     margin-top: 10;
     margin-right: 10px;
@@ -36,8 +36,8 @@ ul {
     overflow: hidden;
 }
 
-li {
-    display:inline;
+li .profile, .icons, .navlink{
+    display: inline;
     float: right;
     padding: 10px;
 }
@@ -51,27 +51,21 @@ li {
 .logo {
     height: 92px;
     width: 272px;
-    padding-top: 109px;
+    padding-top: 110px;
     margin: auto;
 }
 
-.form {
+.searchbar {
     height: 44px;
-    width: 632px;
+    width: 600px;
     border: 1px solid #D6D6D6;
-    background-color: transparent;
-    border-radius: 2px;
+    border-radius: 3px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     box-shadow: 2px 10px 5px -8px #D6D6D6;
 }
-.form:hover {
-    height: 44px;
-    width: 632px;
-    border: 1px solid #D6D6D6;
-    border-radius: 2px;
-    margin: auto;
-    margin-top: 20px;
+
+form div:hover {
     box-shadow: -5px 10px 10px -6px #D6D6D6;
 }
 
@@ -90,44 +84,12 @@ input {
     text-align: left;
 }
 
-.micro {
-    z-index: 10;
-    position: absolute;
+/*Microphone*/
+
+.micro img {
+    position: relative;
     float: right;
-    margin: 33px auto auto 1070px;
-}
-
-.microtext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.microtext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.micro:hover .microtext {
-    visibility: visible;
-    opacity: 1;
+    margin: 10px 20px;
 }
 
 .micro:hover {
@@ -137,32 +99,104 @@ input {
 /*Buttons*/
 
 .buttons {
-    width: 125px;
-    height: 17px;
-    background-color: #f2f2f2;
-    padding: 12px;
-    border: transparent;
-    border-radius: 2px;
-    margin: 30px 4px auto 600px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;
-    color: #757575;
-    flex-direction: row;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .butt {
-    width: 125px;
-    height: 17px;
     background-color: #f2f2f2;
-    padding: 12px;
+    margin: auto 3px;
+    padding: 12px 16px;
     border: transparent;
     border-radius: 2px;
-    margin: 30px auto auto 800px;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
     color: #757575;
 }
 
+.butt:hover {
+    background-color: #f8f8f8;
+    padding: 11px 15px;
+    border: solid #9b9b9b 1px;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000; 
+    box-shadow: -5px 10px 10px -8px #D6D6D6;
+}
+
+.butt:focused{
+    background-color: #f8f8f8;
+    padding: 11px 15px;
+    border: solid #4c8aad 1px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000; 
+}
+
+/*Languages*/
+
+.languages {
+    font-size: 13px;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.languages a:hover {
+    text-decoration: underline;
+    color: rgb(128, 128, 128);
+}
+
+/*Footer*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .swiss {
+    background-color: #f8f8f8;
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 30px;
+    border-top: solid rgb(231, 231, 231) 1px;
+    border-bottom: solid rgb(231, 231, 231) 1px;
+}
+
+footer .footlinks {
+    background-color: #f8f8f8;
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+    padding-left: 30px;
+    border-bottom: solid rgb(231, 231, 231) 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .right {
+    display: flex;
+    list-style-type: none;
+}
+
+.footlinks a {
+    padding-right: 30px;
+    color: rgb(128, 128, 128);
+}
+
+.footlinks a:hover {
+    text-decoration: underline;
+}
